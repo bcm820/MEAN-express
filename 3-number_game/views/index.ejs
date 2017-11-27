@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Great Number Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<new-row>
+    
+    <col-3></col-3>
+    <col-6>
+        <header class=text-center style="margin: 30% 20%">
+            <h3>Welcome to the Great Number Game!</h3>
+            <p>I'm thinking of a number between 1 and 100...</p>
+
+            <% if(nums.g !== 0){ %>
+                <% if(nums.n > nums.g){ %>
+                    <alert-warning><%= nums.g %> is too low!</alert-warning>
+                <% } else if(nums.g > nums.n){ %>
+                    <alert-danger><%= nums.g %> is too high!</alert-danger>
+                <% } else { %>
+                    <alert-success>The number was <%= nums.g %>!</alert-success>
+                <% } %>
+            <% } %>
+            
+            <% if(nums.g != nums.n){ %>
+            <form action=/guess method=post>
+                <div><input type=text name=g></div>
+                <input type=submit value=Guess!>
+            </form>
+            <% } else { %>
+            <form action=/reset method=post>
+                <input type=submit value="Play Again?">
+            </form>
+            <% } %>
+
+        </header>
+    </col-6>
+    <col-3></col-3>
+
+</new-row>
+
+</body>
+</html>

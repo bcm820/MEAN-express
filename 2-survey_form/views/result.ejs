@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class=text-center>
+    <h2>Thank you!</h2>
+    <p>Here is your submitted information</p>
+</header>
+
+<new-row>
+    
+    <col-4></col-4>
+    <col-4>
+        <list-group>
+            <a>Name: <%= user.name %></a>
+            <a>Dojo: <%= user.location %></a>
+            <a>Favorite Stack: <%= user.stack %></a>
+            <a>Comment: <%= user.comment %></a>
+        </list-group>
+        <hr>
+        <div class=text-right><a href='/'>Go Back</a></div>
+    </col-4>
+    <col-4></col-4>
+
+</new-row>
+
+</body>
+</html>

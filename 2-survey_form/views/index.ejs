@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class=text-center>
+    <h2>Survey Form</h2>
+    <p>Please fill this out!</p>
+</header>
+
+<new-row>
+    
+    <col-4></col-4>
+    <col-4>
+        <form action=/send method=post>
+            <div>Your Name: <input type=text name=name></div>
+            <div>
+                Dojo Location:
+                <select name=location>
+                    <option value='Mountain View'>Mountain View</option>
+                    <option value='Seattle'>Seattle</option>
+                    <option value='Los Angeles'>Los Angeles</option>
+                    <option value='Dallas'>Dallas</option>
+                    <option value='Washington DC'>Washington DC</option>
+                    <option value='Chicago'>Chicago</option>
+                    <option value='Tulsa'>Tulsa</option>
+                </select>
+            </div>
+            <div>
+                Favorite Stack:
+                <select name=stack>
+                    <option value='.NET/C#'>.NET/C#</option>
+                    <option value='Ruby on Rails'>Ruby on Rails</option>
+                    <option value='Python'>Python</option>
+                    <option value='MEAN'>MEAN</option>
+                    <option value='Java/Spring'>Java/Spring</option>
+                    <option value='iOS Swift'>iOS Swift</option>
+                </select>
+            </div>
+            <div>Comment (optional):<textarea rows=5 name=comment></textarea></div>
+            <div class=text-right><input type=submit value='Send Response'></div>
+        </form>
+    </col-4>
+    <col-4></col-4>
+
+</new-row>
+
+</body>
+</html>
